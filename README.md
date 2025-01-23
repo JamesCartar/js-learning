@@ -24,4 +24,24 @@
 
 7. **What is ternary operator in JavaScript?**
 
-   A ternary operator is a conditional operator which takes three operands. The first operand is the condition part, the second part which is after the `?` question mark is executed if the condition is evaluated to true. And the third part which is after the `:` colon is executed if the condition is evaluated to be false. It is frequently used as a shortcut for the `if` statement.
+   A ternary operator is a conditional operator which takes three operands. The first operand is the condition part, the second part which is after the `?` question mark is executed if the condition is evaluated to be true. And the third part which is after the `:` colon is executed if the condition is evaluated to be false. It is frequently used as a shortcut for the `if` statement.
+
+8. **How to implement your own custom event in JavaScript?**
+
+   We can implement our own custom event in JavaScript using `CustomEvent` constructor. `CustomEvent` constructor takes two arguments. The first is the event name and the second argument is the optional object that specified the event option. Then, we can use `dispatchEvent` method to dispatch a custom event on our target element/document. To listend to our custom event on our specified element, we can use `addEventListener` method which accepts the event name and the callback function which is called when the event is dispatched. We can also remove our event with `removeEventListener` method.
+
+9. **What is closure in JavaScript?**
+
+    In JavaScript, a closure is a function that has access to its outer function scope even after the outer function has returned. This means that a function can remember and access variables and arguments of its outer function even after the function has finished.
+
+10. **Does arrow function has their own `this`?**
+
+    No, arrow function does not have their own `this`. Instead, they inherit the `this` of their enclosing lexical scope.
+
+11. **Does `map()` method mutate the original array?**
+
+    No, it does not mutate the original array. It returns a new array with the result of calling a provided function on every element of the array.
+
+12. **Does `forEach() method return a new array?**
+
+    No, it does not return a new array. It simply call the provided function on every element of the array.
